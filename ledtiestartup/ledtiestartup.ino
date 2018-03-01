@@ -64,11 +64,11 @@ Have to decide if you want to have it turn on the lights randomly and sometimes 
   //if get same light, try again
   
     count=0;
-  For(i=0;i=numlights;i++;){//count how many lights you have turned on
+  for(i=0;i=numlights;i++;){//count how many lights you have turned on
   	if(randomlightarray(i) ==1){
   		count++;
   }
-    if(count == numlights – 1){ //if your count is 1 less than your total lights on
+    if(count == (numlights – 1)){ //if your count is 1 less than your total lights on
       Setlights(r,g,b,i) = <0,0,0>; //turn them all off 	
       for(i=0;i=numlights;i++){randomlightarray(i) = 0;}//restart the process
     }
